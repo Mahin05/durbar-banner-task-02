@@ -12,7 +12,7 @@ function App() {
         {active === "SecondCard" && <Card data={Data} cardIndex={1} />}
         {active === "ThirdCard" && <Card data={Data} cardIndex={2} />}
       </div>
-      <div>
+      <div className='dots'>
         <span class="dot" onClick={() => setActive("FirstCard")}></span>
         <span class="dot" onClick={() => setActive("SecondCard")}></span>
         <span class="dot" onClick={() => setActive("ThirdCard")}></span>
