@@ -11,7 +11,7 @@ const Card = ({ data, cardIndex }) => {
                         <h3>{item.genre}</h3>
                         <h1>{item.name}</h1>
                         <p>{item.details}</p>
-                        <h3>{item.release}</h3>
+                        <h3 className='mb-4'>{item.release}</h3>
                         <button type="button" class="btn btn-primary">GET STARTED <span><FaRegPlayCircle/></span></button>
                         <button type="button" class="btn btn-add-list">ADD TO WATCHLIST</button>
                     </div>
