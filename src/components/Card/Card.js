@@ -1,8 +1,10 @@
 import React from 'react';
 import './Card.css'
+import { FaRegPlayCircle } from 'react-icons/fa';
+
 const Card = ({ data, cardIndex }) => {
     return (
-        <div>
+        <div className='full-div container'>
             {data[cardIndex].map(item => (
                 <div className='card card-main-div'>
                     <div>
@@ -10,10 +12,10 @@ const Card = ({ data, cardIndex }) => {
                         <h1>{item.name}</h1>
                         <p>{item.details}</p>
                         <h3>{item.release}</h3>
-                        <button>GET STARTED</button>
-                        <button>ADD TO WATCHLIST</button>
+                        <button type="button" class="btn btn-primary">GET STARTED <span><FaRegPlayCircle/></span></button>
+                        <button type="button" class="btn btn-add-list">ADD TO WATCHLIST</button>
                     </div>
-                    <div>
+                    <div className='image-div'>
                         <img src={item.image} alt="" />
                     </div>
                 </div>
